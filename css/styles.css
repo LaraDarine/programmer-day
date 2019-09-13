@@ -1,0 +1,120 @@
+
+body, button {
+    background-color: black;
+    font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+
+#code {
+    width: 100%;
+    color: #b6b4b4;
+    z-index: 9999 !important;
+}
+
+#code div {
+    padding-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+
+.type-line {
+    width: 100% !important;
+    float: left;
+    animation: write 4s steps(60, end);
+}
+
+#code :nth-child(2) {
+    padding-left: 20px;
+}
+
+span {
+    padding: 0 !important;
+}
+
+#main-code {
+    width: 800px;
+    height: 800px;
+    margin: 20px auto;
+    background-image: url('../img/imac.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#window {
+    display: flex;
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    color: rgb(145, 184, 82);
+    height: 452px;
+    padding: 50px;
+    z-index: -1;
+}
+
+#button {
+    float: right;
+    border: #569cd6 solid 1px;
+    border-radius: 6px;
+    background-color: royalblue;
+    width: 100px;
+    height: 35px;
+    color: #dcdcaa;
+    font-size: 1.3em;
+    position: relative;
+    top: -160px;
+    right: 345px;
+}
+
+#button:hover {
+    background-color: black;
+    color: #dcdcaa;
+}
+
+#container-img {
+    margin: 0 auto;
+    display: none;
+}
+
+#window, img {
+    border-radius: 20px;
+}
+
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+
+/* Colors theme */
+
+.key-word {
+    color: #569cd6;
+}
+
+.variable, .attr {
+    color: #9cdcfe;
+}
+
+.bracket {
+    color: #d8d8d8;
+}
+
+.operator, .dot {
+    color: #fff;
+}
+
+.string {
+    color: #ce9178;
+}
+
+.fun {
+    color: #dcdcaa;
+}
+
+.argument {
+    color: #79abff;
+}
+
+@keyframes write{ 
+    from { width: 0; } 
+}
